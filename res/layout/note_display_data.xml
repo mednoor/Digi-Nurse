@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableRow
+        android:id="@+id/tableRowTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/noteTitleTxtV"
+            android:layout_weight="1"
+            android:hint="@string/title"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/noteState"
+            android:contentDescription="@string/picture"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/noteDataAddTxtV"
+            android:layout_weight="1"
+            android:hint="@string/date"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/noteUpdateTxtV"
+            android:layout_weight="1"
+            android:hint="@string/date"
+            android:singleLine="true" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/noteNTitleTxtV"
+            android:layout_span="3"
+            android:layout_weight="1"
+            android:scrollbars="vertical"
+            android:text="@string/note_long" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowNoteData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/noteTxtV"
+            android:layout_span="3"
+            android:layout_weight="1"
+            android:gravity="left|top"
+            android:minLines="18"
+            android:scrollbars="vertical" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableBtnData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/noteDataDeleteBtn"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="@string/deletebtn" />
+
+        <Button
+            android:id="@+id/noteEditBtn"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="@string/editbtn" />
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="photo"
+        android:src="@drawable/picture_profile" />
+
+    <TextView
+        android:id="@+id/civilityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photoImageView"
+        android:padding="3dp"
+        android:text="M"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lastNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photoImageView"
+        android:layout_toRightOf="@id/civilityTextView"
+        android:padding="3dp"
+        android:text="Last Name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/firstNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photoImageView"
+        android:layout_toRightOf="@id/lastNameTextView"
+        android:padding="3dp"
+        android:text="First Name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/sizeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstNameTextView"
+        android:padding="3dp"
+        android:text="Size"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/cmUnitTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstNameTextView"
+        android:layout_toRightOf="@id/sizeTextView"
+        android:padding="3dp"
+        android:text="Unit"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/weightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cmUnitTextView"
+        android:padding="3dp"
+        android:text="Weight"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/weightUnitTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cmUnitTextView"
+        android:layout_toRightOf="@id/weightTextView"
+        android:padding="3dp"
+        android:text="Unit"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/birthdayTextViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weightTextView"
+        android:padding="3dp"
+        android:text="Birthday"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/birthdayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weightTextView"
+        android:layout_toRightOf="@id/birthdayTextViewLabel"
+        android:padding="3dp"
+        android:text="Birthday"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/doctorTextViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/birthdayTextViewLabel"
+        android:padding="3dp"
+        android:text="Doctor"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/doctorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/birthdayTextViewLabel"
+        android:layout_toRightOf="@id/doctorTextViewLabel"
+        android:padding="3dp"
+        android:text="Doctor"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bloodTypeTextViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/doctorTextViewLabel"
+        android:padding="3dp"
+        android:text="Blood Type"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bloodTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/doctorTextViewLabel"
+        android:layout_toRightOf="@id/bloodTypeTextViewLabel"
+        android:padding="3dp"
+        android:text="Blood Type"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/IMCTextViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bloodTypeTextViewLabel"
+        android:padding="3dp"
+        android:text="IMC"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/IMCTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bloodTypeTextViewLabel"
+        android:layout_toRightOf="@id/IMCTextViewLabel"
+        android:padding="3dp"
+        android:text="IMC"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/editProfileBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IMCTextView"
+        android:padding="3dp"
+        android:text="Edit" />
+
+</RelativeLayout>

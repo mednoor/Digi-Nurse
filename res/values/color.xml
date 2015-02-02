@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="textWhite">#FFFFFF</color>
+
+    <!-- Profile Button -->
+    <color name="profileBg">#33B5E5</color>
+    <color name="profileHover">#0099CC</color>
+
+    <!-- Consultation Button -->
+    <color name="consultationBg">#AA66CC</color>
+    <color name="consultationHover">#9933CC</color>
+
+    <!-- Drug Button -->
+    <color name="drugBg">#99CC00</color>
+    <color name="drugHover">#669900</color>
+
+    <!-- Emergency Layout -->
+    <color name="emergencyBg">#FF4444</color>
+    <color name="emergencyHover">#CC0000</color>
+
+    <!-- Note Button -->
+    <color name="noteBg">#FFBB33</color>
+    <color name="noteHover">#FF8800</color>
+     
+    
+    <!-- Color of medication -->
+    <color name="GreenMedication">#99CC00</color>
+
+    <!-- Button disable color -->
+    <color name="disableButton">#EDEDED</color>
+     
+    
+     <!-- Caldroid  -->
+    <color name="caldroid_white">#FFFFFF</color>
+    <color name="caldroid_black">#000000</color>
+    <color name="caldroid_transparent">#00000000</color>
+    <!-- For settings framework -->
+    <color name="caldroid_lighter_gray">#ddd</color>
+    <color name="caldroid_gray">#CCC</color>
+    <color name="caldroid_darker_gray">#aaa</color>
+    <!-- A light Holo shade of blue -->
+    <color name="caldroid_holo_blue_light">#ff33b5e5</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="caldroid_holo_blue_dark">#ff0099cc</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="caldroid_sky_blue">#FFA3E8F7</color>
+
+</resources>

@@ -1,0 +1,118 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#D8D8D8" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/medication_schedule_border"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView_title_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:text="Quantité"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_margin="10dp"
+                android:background="#99CC00" />
+
+            <LinearLayout
+                android:id="@+id/linearlayout_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/medication_schedule_border"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:text="Food Instructions"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_margin="10dp"
+                android:background="#99CC00" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_food_instructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radio_before_food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="before_food"
+                    android:text="Before Food" />
+
+                <RadioButton
+                    android:id="@+id/radio_with_food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="with_food"
+                    android:text="With Food" />
+
+                <RadioButton
+                    android:id="@+id/radio_after_food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="after_food"
+                    android:text="After Food" />
+
+                <RadioButton
+                    android:id="@+id/radio_no_food_instructions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:tag="no_food_instructions"
+                    android:text="No food instructions" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/free_text_instructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Free text instructions"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

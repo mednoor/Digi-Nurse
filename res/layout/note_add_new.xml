@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableRow
+        android:id="@+id/tableRowTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/noteTitleEditTxt"
+            android:layout_weight="1"
+            android:hint="@string/title"
+            android:singleLine="true" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/noteEditTxt"
+            android:layout_span="3"
+            android:layout_weight="1"
+            android:gravity="left|top"
+            android:hint="@string/note_long"
+            android:inputType="textMultiLine"
+            android:minLines="16"
+            android:scrollbars="vertical" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/noteAddSave"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="@string/save_btn" />
+    </TableRow>
+
+</TableLayout>

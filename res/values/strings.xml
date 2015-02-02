@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DigiNurse</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings Main Activity -->
+    <string name="profile">PROFILE</string>
+    <string name="consultation">CONSULTATION</string>
+    <string name="drug">MEDICATION</string>
+    <string name="note">NOTE</string>
+    <string name="emergency">EMERGENCY</string>
+
+    <!-- String Add and edit profil -->
+    <string name="new_profile">New Profile</string>
+    <string name="edit_profile">Edit Profil</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="doctor">Regular Doctor</string>
+    <string name="birthday">Birthday</string>
+    <string name="blood_type">Blood Type</string>
+    <string name="picture">Picture</string>
+    <string name="size">Size</string>
+    <string name="weight">Weight</string>
+    <string name="error">This field is required</string>
+    <string name="date_format">MM/DD/YYYY</string>
+    <string name="save_btn">SAVE</string>
+    <string name="delete_btn">DELETE</string>
+    <string name="take_photo">+PICTURE</string>
+    <string name="take_photo_alert_dialog">Load or Take Photo?</string>
+    <string name="take_photo_alert_dialog_choose">Load Photo</string>
+    <string name="take_photo_alert_dialog_take">Take A Photo</string>
+    <string name="take_photo_loaded">Photo loaded</string>
+    <string name="wrong_unity">ERROR</string>
+
+    <string-array name="list_civility">
+        <item>Mr</item>
+        <item>Mrs</item>
+        <item>Ms</item>
+    </string-array>
+    <string-array name="list_bloodType">
+        <item>A</item>
+        <item>B</item>
+        <item>AB</item>
+        <item>O</item>
+    </string-array>
+    <string-array name="list_size">
+        <item>cm</item>
+        <item>feet</item>
+        <item>inches</item>
+    </string-array>
+    <string-array name="list_weight">
+        <item>kg</item>
+        <item>lbs</item>
+    </string-array>
+    <string-array name="emergency_list">
+        <item>Family</item>
+        <item>Doctor</item>
+        <item>Hospital</item>
+        <item>Police</item>
+        <item>Ambulance</item>
+        <item>Others</item>
+    </string-array>
+
+    <!-- String Note Activity -->
+    <string name="add">Ajouter</string>
+
+    <!-- String Add and edit note -->
+    <string name="new_note">New Note</string>
+    <string name="edit_note">Editer Note</string>
+    <string name="new_record">New Record</string>
+    <string name="edit_record">Record</string>
+    <string name="record_play">Play</string>
+    <string name="record_error">Error playing back audio</string>
+    <string name="record_stop">Stop playing</string>
+    <string name="record_delete">Deleted successfully</string>
+    <string name="record_add">Added successfully</string>
+    <string name="record_cancel">Canceled</string>
+    <string name="record_recording">Recording</string>
+    <string name="record_error_playing">Error starting recording!</string>
+    <string name="record_recorded">Recorded</string>
+    <string name="note_update">Updated successfully</string>
+    <string name="note_sure">Are you sure?</string>
+    <string name="note_tab_audio">Audio</string>
+    <string name="note_tab_note">Memo</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="title">Title</string>
+    <string name="note_long">Note</string>
+    <string name="emergency_contact">Contact Emergency</string>
+    <string name="record_audio">RECORD AUDIO</string>
+    <string name="emergency_tel">Tel Number</string>
+    <string name="emergency_addbtn">ADD</string>
+    <string name="emergency_cancelbtn">CANCEL</string>
+    <string name="date">Date</string>
+    <string name="deletebtn">Delete</string>
+    <string name="editbtn">Edit</string>
+    <string name="sure_delete">Do you want to delete this record?</string>
+    <string name="sure_save">Do you want to save this record?</string>
+
+    <!-- String medication -->
+    <string name="every_x_days">tous les %1$d jours!</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="before_food">Before food</string>
+    <string name="with_food">With food</string>
+    <string name="after_food">After food</string>
+    <string name="no_food_instructions">No food instructions</string>
+    <string name="before_food_short">Before</string>
+    <string name="with_food_short">With</string>
+    <string name="after_food_short">After</string>
+    <string name="no_food_instructions_short"></string>
+    
+         <!-- String consultation -->
+     <string name="speciality_ophthalmology">Ophthalmology</string>
+    <string name="speciality_cardiology">Cardiology</string>
+    <string name="speciality_dentistry">Dentistry</string>
+    <string name="speciality_pediatrics">Pediatrics</string>    
+    <string name="speciality_general_practice">General Practice</string>
+    <string name="speciality_ent">Ear, Nose and Throat</string>
+    <string name="speciality_neurology">Neurology</string>    
+    <string name="speciality_sexology">Sexology</string>
+    <string name="speciality_gastroenterology">Gastroenterology</string>    
+    <string name="speciality_other">Other</string>
+    
+
+</resources>

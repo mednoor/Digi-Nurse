@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableRow
+        android:id="@+id/tableRowTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/noteTitleTxtV"
+            android:layout_weight="0"
+            android:text="Title"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/noteTitleEditTxtV"
+            android:layout_weight="1"
+            android:singleLine="true" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/noteStatextV"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="State" />
+    </TableRow>
+
+    <RadioGroup
+        android:id="@+id/groupState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/radio2"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/resolved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resolved" />
+
+        <RadioButton
+            android:id="@+id/treating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Treating" />
+    </RadioGroup>
+
+    <TableRow
+        android:id="@+id/tableRowNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/noteNTitleTxtV"
+            android:layout_span="3"
+            android:layout_weight="1"
+            android:scrollbars="vertical"
+            android:text="NOTE" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowNoteData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/noteEditedTxt"
+            android:layout_span="3"
+            android:layout_weight="1"
+            android:gravity="left|top"
+            android:inputType="textMultiLine"
+            android:minLines="13"
+            android:scrollbars="vertical" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/noteSavedBtn"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Save" />
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@android:drawable/ic_menu_add"
+        android:showAsAction="always|withText"
+        android:title="@string/add">
+        <menu android:id="@+id/sousmenu" >
+            <item
+                android:id="@+id/noteEcrite"
+                android:title="Note"/>
+            <item
+                android:id="@+id/noteAudio"
+                android:title="Audio"/>
+        </menu>
+    </item>
+
+</menu>

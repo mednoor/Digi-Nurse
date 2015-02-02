@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bt.healthrecord"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.bt.healthrecord.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:parentActivityName=".MainActivity"
+            >
+        </activity>
+        <activity
+            android:name=".DrugActivity"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".NoteMainActivity"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".NoteAddNewActivity"
+            android:parentActivityName=".NoteMainActivity" >
+        </activity>
+        <activity
+            android:name=".AudioDisplayData"
+            android:parentActivityName=".NoteMainActivity" >
+        </activity>
+        <activity
+            android:name=".NoteDisplayData"
+            android:parentActivityName=".NoteMainActivity" >
+        </activity>
+        <activity android:name=".NoteEditActivity" >
+        </activity>
+        <activity
+            android:name=".NoteAudioAddActivity"
+            android:parentActivityName=".NoteMainActivity" >
+        </activity>
+        <activity
+            android:name=".EmergencyActivity"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".EmergencyAddActivity"
+            android:parentActivityName=".EmergencyActivity" 
+            >
+        </activity>
+        <activity android:name=".ProfileAddNewActivity" 
+             android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name=".ProfileEditActivity"
+            android:parentActivityName=".ProfileActivity"
+             >
+        </activity>
+
+        <!-- Start Medication part -->
+        <activity
+            android:name="com.bt.medication_schedule.ScheduleMedicationActivity"
+            android:parentActivityName="com.bt.medication_byday.MedicationToTake"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            />
+        <activity
+            android:name="com.bt.medication_byday.MedicationToTake"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name="com.bt.medication_listing.MedicationListing"
+            android:parentActivityName="com.bt.medication_byday.MedicationToTake" />
+        <activity
+            android:name="com.bt.medication_schedule.Test"
+            android:theme="@android:style/Theme.Dialog"
+             />
+
+        <receiver android:name="com.bt.medication_alarm.TimeAlarm" />
+        <receiver android:name="com.bt.medication_alarm.CronAlarm" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <!-- End Medication part -->
+
+
+        <!-- Start Consultation part -->
+
+        <activity
+            android:name="com.bt.consultation.ConsultationCalendarActivity"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name="com.bt.consultation.ConsultationViewByDayActivity"
+            android:parentActivityName="com.bt.consultation.ConsultationCalendarActivity" />
+        <activity
+            android:name="com.bt.consultation.ConsultationAddEditActivity"
+            android:parentActivityName="com.bt.consultation.ConsultationCalendarActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.bt.consultation.ConsultationDetailsActivity"
+           
+            android:parentActivityName="com.bt.consultation.ConsultationCalendarActivity" />
+    </application>
+
+</manifest>

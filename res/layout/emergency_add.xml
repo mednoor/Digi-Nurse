@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8D8D8"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/Coordonnee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/emergencyCoordonnees"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/emergency_contact"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/profilSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp" />
+
+        <EditText
+            android:id="@+id/emergencyAddName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/first_name"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/emergencyAddTel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/emergency_tel"
+            android:inputType="phone"
+            android:singleLine="true" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+            android:id="@+id/CoordonneeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp" >
+
+            <Button
+                android:id="@+id/emergencyAddBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/ic_states_ok"
+                android:onClick="onClick"
+                android:padding="3dp"
+                android:text="@string/emergency_addbtn"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/emergencyCancelBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/ic_navigation_cancel"
+                android:onClick="onClick"
+                android:padding="3dp"
+                android:text="@string/emergency_cancelbtn"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+</LinearLayout>

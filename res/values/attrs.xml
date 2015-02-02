@@ -1,0 +1,8 @@
+<resources>
+
+    <declare-styleable name="NumberPicker">       
+        
+        <attr name="minimum" format="integer"/>
+    </declare-styleable>
+
+</resources>

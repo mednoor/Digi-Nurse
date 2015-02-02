@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#D8D8D8" >
+
+    <TableRow
+        android:id="@+id/tableRowTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/noteAudioTitleTxtV"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/note_tab_audio"
+            android:textSize="15sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/AudioTitleView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/title"
+            android:textSize="30sp"
+            android:layout_margin="3dp" />
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableDataRecord"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/AudioDateView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/date"
+            android:textSize="13sp"
+            android:layout_margin="3dp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowRecord"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="#FFFFFF"
+        android:padding="3dp" >
+
+        <ImageButton
+            android:id="@+id/audioPlayBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/drug_selector"
+            android:contentDescription="@string/record_play"
+            android:onClick="onClick"
+            android:padding="20dp"
+            android:src="@drawable/ic_av_play" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/audioStopBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/note_selector"
+            android:contentDescription="@string/record_stop"
+            android:onClick="onClick"
+            android:padding="20dp"
+            android:src="@drawable/ic_av_stop" >
+        </ImageButton>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowConfirmation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/noteAudioConfirmationTxtV"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/sure_delete"
+            android:textSize="15sp" />
+    </TableRow>
+
+    <LinearLayout
+        android:id="@+id/confirmationLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/yesAudioBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/ic_states_ok"
+            android:onClick="onClick"
+            android:padding="3dp"
+            android:text="@string/yes"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="1dp" />
+
+        <Button
+            android:id="@+id/nonAudioBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/ic_undo"
+            android:onClick="onClick"
+            android:padding="3dp"
+            android:text="@string/no"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</TableLayout>

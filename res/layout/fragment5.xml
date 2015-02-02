@@ -1,0 +1,154 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_step5"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#D8D8D8" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#D8D8D8"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/medication_schedule_border"
+            android:id="@+id/linearlayout_container_summary_name_appareance"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView_name_appareance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:text="Nom et apparence"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_margin="10dp"
+                android:background="#99CC00" />
+
+            <LinearLayout
+                android:id="@+id/linearlayout_recap_name_appareance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/medication_schedule_border"
+            android:id="@+id/linearlayout_container_summary_duration"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:text="Durée"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_margin="10dp"
+                android:background="#99CC00" />
+
+            <LinearLayout
+                android:id="@+id/linearlayout_recap_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/medication_schedule_border"
+            android:id="@+id/linearlayout_container_summary_time_days"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView_time_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:text="Temps et Jours"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_margin="10dp"
+                android:background="#99CC00" />
+
+            <LinearLayout
+                android:id="@+id/linearlayout_recap_time_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/medication_schedule_border"
+            android:id="@+id/linearlayout_container_summary_instructions"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView_instructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:text="Instructions"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_margin="10dp"
+                android:background="#99CC00" />
+
+            <LinearLayout
+                android:id="@+id/linearlayout_recap_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
